@@ -7,10 +7,9 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
+  } from 'reactstrap';
+
+  import logo from '../assets/logo2.jpg';
 
 export default class AppNavbar extends React.Component {
   constructor(props) {
@@ -30,7 +29,7 @@ export default class AppNavbar extends React.Component {
     return (
       <div>
         <Navbar style={{ backgroundColor: 'transparent'}} fixed light expand="md">
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
+          <NavbarBrand href="/"><img src={logo} style={{height:50, width:50}} />SUM</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
