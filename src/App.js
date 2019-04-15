@@ -2,11 +2,14 @@ import React, { Component } from 'react';
 import './App.css';
 
 import AppNavbar from './components/AppNavbar';
+import Landing from './screens/Home';
+
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div>
         <AppNavbar />
+        <Landing />
       </div>
     );
   }
